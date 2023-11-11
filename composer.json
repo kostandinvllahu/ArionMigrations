@@ -26,5 +26,7 @@
                 "ArionMigrations\\Providers\\ArionMigrationServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
