@@ -1,0 +1,30 @@
+{
+    "name": "arionmigrations/arion-migrations",
+    "description": "Laravel package for specifying column positions in migrations",
+    "type": "library",
+    "keywords": ["laravel", "migration", "column position"],
+    "homepage": "https://github.com/kostandinvllahu/ArionMigrations",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kostandin Vllahu",
+            "email": "kostandinvllahuatd@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "illuminate/support": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ArionMigrations\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ArionMigrations\\Providers\\ArionMigrationServiceProvider"
+            ]
+        }
+    }
+}
