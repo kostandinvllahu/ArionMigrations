@@ -1,32 +1,31 @@
 {
-    "name": "arionmigrations/arion-migrations",
-    "description": "Laravel package for specifying column positions in migrations",
-    "type": "library",
-    "keywords": ["laravel", "migration", "column position"],
-    "homepage": "https://github.com/kostandinvllahu/ArionMigrations",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Kostandin Vllahu",
-            "email": "kostandinvllahuatd@gmail.com"
-        }
-    ],
+    "name": "your/laravel-project",
+    "description": "Your Laravel Project Description",
+    "type": "project",
     "require": {
         "php": "^8.2.4",
-        "illuminate/support": "^8.0 || ^8.83",  // Updated version constraint
+        "laravel/framework": "^8.0",
+        "illuminate/support": "^8.0 || ^8.83" // Updated version constraint
+        // other Laravel dependencies
     },
-    "autoload": {
-        "psr-4": {
-            "ArionMigrations\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "ArionMigrations\\Providers\\ArionMigrationServiceProvider"
-            ]
-        }
+    "require-dev": {
+        "fzaninotto/faker": "^1.9.1",
+        "phpunit/phpunit": "^9.0",
+        // other development dependencies
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
+        "files": [
+            "app/Http/helpers.php"
+        ]
+    },
+    // other settings
 }
